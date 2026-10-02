@@ -1,0 +1,11 @@
+<svg width="16" height="15" viewBox="0 0 16 15" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path id="a" d="M0 0h16v16H0z"/>
+    </defs>
+    <g transform="translate(0 -1)" fill="none" fill-rule="evenodd">
+        <mask id="b" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+        <path fill="#00C63B" mask="url(#b)" d="M16 15.445h-5.455L5.383 7.967v7.478H0V1h5.458l5.161 7.475V1H16z"/>
+    </g>
+</svg>

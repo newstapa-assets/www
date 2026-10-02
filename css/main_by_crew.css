@@ -1,0 +1,313 @@
+.main-wrap {
+  width: 100%;
+  overflow: hidden;
+}
+.main-container {
+  max-width: 1210px;
+  width: 100%;
+  margin: auto;
+  padding: 100px 15px 0;
+  box-sizing: border-box;
+}
+.main-wrap a {
+  color: #151619;
+}
+.main-wrap a:hover {
+  color: #606061;
+}
+.main-title-text {
+  vertical-align: middle;
+}
+.main-title-new {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #ff733c;
+  vertical-align: super;
+}
+.main-title-arrow {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  transform: rotate(45deg);
+  margin-left: 4px;
+  vertical-align: middle;
+}
+ 
+.main-banner-info {
+  max-width: 480px;
+}
+.main-banner-title-wrap {
+  padding-bottom: 20px;
+}
+.main-banner-title h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.main-banner-description {
+  margin-top: 10px;
+}
+.main-banner-description p {
+  font-size: 16px;
+  color: #606061;
+}
+.main-banner-element-wrap {
+  padding-top: 20px;
+  border-top: 1px solid #ddddde;
+}
+.main-banner-element {
+  margin-bottom: 10px;
+}
+.main-banner-element a {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* 섹션 */
+.main-section-wrap {
+  margin-top: 40px;
+}
+.main-section {
+  margin: 0;
+}
+.main-section-title-wrap {
+  min-width: 280px;
+  padding: 30px 0 0;
+  border-top: 1px solid #ddddde;
+}
+.main-section-title h3 {
+  font-size: 21px;
+  font-weight: bold;
+}
+.main-section-description {
+  margin-top: 10px;
+}
+.main-section-description p {
+  font-size: 16px;
+  color: #606061;
+}
+.main-section-element-wrap {
+  padding-left: 20px;
+  max-width: calc(50vw + 50% - 280px);
+}
+.main-section-element {
+  max-width: 380px;
+  padding-right: 0;
+}
+.main-section-element-title {
+  margin-top: 10px;
+}
+.main-section-element-title h4{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* 최신뉴스 */
+.main-recent-wrap {
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 1px solid #ddddde;
+}
+
+.main-recent-element-wrap {
+  padding-top: 20px;
+}
+.main-recent-title h3{
+  font-size: 21px;
+  font-weight: bold;
+}
+.main-recent-element-list {
+  width: max-content;
+  max-width: calc(50vw + 50%);
+}
+.main-recent-element {
+  max-width: 380px;
+  padding-right: 0;
+}
+.main-recent-element-title {
+  margin-top: 10px;
+}
+.main-recent-element-title h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.main-donation-wrap {
+  margin-top: 40px; 
+}
+.main-donation {
+  width: 100%;
+  height: 200px;
+  background-color: #ff733c;
+  background-image: url(../images/main-donate-bg.jpg);
+  background-size: cover;
+  background-position: right;
+  position: relative;
+}
+.main-donation-title {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 30px;
+  word-break: keep-all;
+}
+.main-donation-anchor {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  color: #000;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.main-info-wrap {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.main-info-wrap .slick-dots {
+  bottom: 25px;
+}
+
+
+.main-subscribe-title h3 {
+  font-size: 21px;
+  font-weight: bold;
+}
+.main-sns-wrap {
+  margin-top: 20px;
+}
+.main-sns-element {
+  background-color: #000;
+  height: 40px;
+  padding: 8px 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+.main-sns-element a {
+  color: white;
+}
+.main-sns-element a:hover {
+  color: white;
+}
+.main-sns-element .main-title-arrow {
+  border-color: white;
+}
+.main-sns-element img {
+  margin-right: 5px;
+}
+.main-newsletter-wrap {
+  margin-top: 36px;
+  padding: 20px;
+  background-color: #f6f6f7;
+  border-radius: 15px;
+}
+.main-newsletter-title h4 {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.main-newsletter-description {
+  margin-top: 10px;
+}
+.main-newsletter-form {
+  margin-top: 10px;
+}
+.main-newsletter-form [class*=col-] {
+  flex-basis: content;
+}
+.stb_form_set_input {
+  padding: 10px 0;
+  border: 0;
+  background-color: inherit;
+  background-image: none;
+  border-bottom: 1px solid #ababac;
+}
+.stb_form_submit_button {
+  background-image: none;
+  background-color: #ff733c;
+  border-radius: 20px;
+  border: 0;
+  padding: 8px 15px;
+  font-weight: bold;
+  font-size: 16px;
+}
+.stb_form_msg_error {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #ff733c;
+}
+
+/*배너 섹션*/
+.main-bSection-wrap {
+  margin-top: 40px; 
+}
+.main-bSection {
+  width: 100%;
+  position: relative;
+}
+ 
+@media (max-width: 991px) {
+  .main-banner-info {
+	max-width: 100%;
+	margin-top: 20px;
+  }
+  .main-donation {
+	height: 150px;
+  }
+  .main-donation-title {
+	font-size: 16px;
+	top: 20px;
+	left: 20px;
+	transform: inherit;
+	max-width: 200px;
+  }
+  .main-donation-anchor {
+	font-size: 14px;
+	top: initial;
+	bottom: 10px;
+	right: 20px;
+  }
+  .main-newsletter-form [class*=col-] {
+	flex-basis: auto;
+  }
+  .stb_form_set_input {
+	width: 100%;
+  }
+  .stb_form_submit_button {
+	margin-top: 20px;
+	width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .main-banner-element-wrap {
+	border-top: 0;
+	padding-top: 0;
+  }
+  .main-banner-element {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+  }
+  .main-section-element-wrap {
+	max-width: 100%;
+	padding-left: 0;
+	margin-top: 20px;
+  }
+  .main-section-element {
+	max-width: 300px;
+  }
+  .main-recent-element {
+	max-width: 300px;
+  }
+
+  .main-sns-element {
+	margin-bottom: 10px;
+	width: 45%;
+  }
+}

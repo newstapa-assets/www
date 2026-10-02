@@ -1,0 +1,576 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.5;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+strong, b {
+  font-weight: bold;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.color-orange {
+  color: #ff733c
+}
+
+.mt-10{margin-top: 10px;}
+.mt-20{margin-top: 20px;}
+.mt-30{margin-top: 30px;}
+.mt-40{margin-top: 40px;}
+.mt-50{margin-top: 50px;}
+.mb-10{margin-bottom: 10px;}
+.mb-20{margin-bottom: 20px;}
+.mb-30{margin-bottom: 30px;}
+.mb-40{margin-bottom: 40px;}
+.mb-50{margin-bottom: 50px;}
+
+.flex {
+  display: flex;
+  gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-display-block {
+	display: block;
+  }
+  .mobile-display-none{
+	display: none;
+  }
+}
+
+
+/* 최상단 배너 영역 */
+.donation-banner {
+  height: 386px;
+  background-color: #151619;
+  color: white;
+  position: relative;
+}
+.donation-banner-title-wrapper {
+  max-width: 1180px;
+  margin: auto;
+  padding-top: 50px;
+}
+.donation-banner-title {
+  font-size: 21px;
+  line-height: 38px;
+  font-weight: bold;
+}
+.donation-banner-subtitle {
+  margin-top: 60px;
+  font-size: 24px;
+  line-height: 38px;
+  font-weight: bold;
+}
+.donation-banner-subtitle:before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 1px;
+  position: relative;
+  top: -20px;
+  background-color: #ff733c;
+}
+.donation-edit-link {
+  position: absolute;
+  bottom: 30px;
+}
+.donation-edit-link a {
+  color: #929293;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1200px) {
+  .donation-banner-title-wrapper {
+	padding-left: 15px;
+	padding-right: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .donation-banner {
+	height: 430px;
+  }
+  .donation-banner-title-wrapper {
+	padding-top: 20px;
+  }
+  .donation-edit-link {
+	right: 15px;
+  }
+}
+
+/* 레이아웃 */
+.donation-section-title {
+  margin-top: 20px;
+}
+.donation-section-title-number, .donation-section-title-text {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 38px;
+}
+.donation-section-title-number {
+  color: #ff733c;
+}
+.donation-section-description {
+  margin-top: 20px;
+  color: #2e2e2f;
+  font-size: 16px;
+  line-height: 25px;
+}
+/* 페이팔 아이콘 */
+.donation-icon-paypal {
+  display: inline-block;
+  width: 60px;
+  height: 16px;
+  margin-right: 3px;
+  background: url(../donate_image/icon-paypal.png) no-repeat;
+  background-size: contain;
+  text-indent: -9999px;
+  vertical-align: middle;
+}
+
+/* 정기후원 일시후원 선택 */
+.donation-period {
+  display: flex;
+  margin-top: 30px;
+}
+.donation-period-option {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 21px 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #c4c4c5;
+  border: 1px solid #ababac;
+  border-right: 0;
+  cursor: pointer;
+}
+.donation-period-option:first-of-type {
+  border-radius: 10px 0 0 10px;
+}
+.donation-period-option:last-of-type {
+  border-radius: 0 10px 10px 0;
+  border-right: 1px solid #ababac;
+}
+.donation-period-option.selected {
+  border-color: #ff733c;
+  border-width: 2px;
+  color: #ff733c;
+  border-right: 2px solid #ff733c;
+}
+.donation-period-option.selected+.donation-period-option {
+  border-left: 0;
+}
+
+/* 후원금액 선택 */
+.donation-amount {
+  display: flex;
+  margin-top: 20px;
+}
+.donation-amount-option {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 45px 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #c4c4c5;
+  border: 1px solid #ababac;
+  border-right: 0;
+  cursor: pointer;
+}
+.donation-amount-option:first-of-type {
+  border-radius: 10px 0 0 10px;
+}
+.donation-amount-option:last-of-type {
+  border-radius: 0 10px 10px 0;
+  border-right: 1px solid #ababac;
+}
+.donation-amount-option.selected {
+  border-color: #ff733c;
+  border-width: 2px;
+  color: #ff733c;
+  border-right: 2px solid #ff733c;
+}
+.donation-amount-option.selected+.donation-amount-option {
+  border-left: 0;
+}
+@media screen and (max-width: 768px) {
+  .donation-amount {
+	flex-wrap: wrap;
+  }
+  .donation-amount-option {
+	flex: 1 0 30%;
+  }
+  .donation-amount-option:first-of-type {
+	border-radius: 10px 0 0 0;
+  }
+  .donation-amount-option:nth-of-type(3) {
+	border-radius: 0 10px 0 0;
+	border-right: 1px solid #ababac;
+  }
+  .donation-amount-option:nth-of-type(4) {
+	border-radius: 0 0 0 10px;
+  }
+  .donation-amount-option:last-of-type {
+	border-radius: 0 0 10px 0;
+	border-right: 1px solid #ababac;
+  }
+  .donation-amount-option.selected {
+	border-color: #ff733c;
+	border-width: 2px;
+	color: #ff733c;
+	border-right: 2px solid #ff733c;
+  }
+  
+  .donation-amount-option.selected+.donation-amount-option {
+	border-left: 1px solid #ababac;
+  }
+}
+
+
+/* 결제방법 선택 */
+.description-over10k {
+  font-weight: bold;
+  text-align: center;
+  color: #ff733c;
+  display: none;
+}
+.donation-method {
+  display: flex;
+  gap: 0 20px;
+  margin-top: 20px;
+}
+.donation-method-option {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 25px 0 15px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #c4c4c5;
+  border: 1px solid #ababac;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.donation-method-option.selected {
+  border-width: 2px;
+}
+.donation-method-option .donation-method-image {
+  max-width: 100px;
+  height: 80px;
+  margin: 0 auto 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* border: 1px dashed #ddd; */
+}
+@media screen and (max-width: 768px) {
+  .donation-method {
+	flex-wrap: wrap;
+	gap: 15px;
+	row-gap: 15px;
+  }
+  .donation-method-option {
+	flex: 1 0 40%;
+  }
+}
+
+/* 계좌이체 */
+.donation-method-option.account .donation-method-image {
+  background-image: url(../donate_image/icon_account_normal.png);
+}
+.donation-method-option.account.selected {
+  border-color: #ff733c;
+  color:#ff733c;
+}
+.donation-method-option.account.selected .donation-method-image {
+  background-image: url(../donate_image/icon_account_select.png);
+}
+
+.donation-method-option.account2 .donation-method-image {
+  background-image: url(../donate_image/icon_account_normal.png);
+}
+.donation-method-option.account2.selected {
+  border-color: #ff733c;
+  color:#ff733c;
+}
+.donation-method-option.account2.selected .donation-method-image {
+  background-image: url(../donate_image/icon_account_select.png);
+}
+
+/* 신용카드 */
+.donation-method-option.card .donation-method-image {
+  min-width:90px;
+  background-image: url(../donate_image/icon_card_normal.png);
+}
+.donation-method-option.card.selected {
+  border-color: #ff733c;
+  color:#ff733c;
+}
+.donation-method-option.card.selected .donation-method-image {
+  min-width:90px;	
+  background-image: url(../donate_image/icon_card_select.png);
+}
+.donation-method-option.card2 .donation-method-image {
+  background-image: url(../donate_image/icon_card_normal.png);
+}
+.donation-method-option.card2.selected {
+  border-color: #ff733c;
+  color:#ff733c;
+}
+.donation-method-option.card2.selected .donation-method-image {
+  background-image: url(../donate_image/icon_card_select.png);
+}
+/* 네이버페이 */
+.donation-method-option.naver {
+  cursor: not-allowed;
+}
+.donation-method-option.naver .donation-method-image {
+  background-image: url(../donate_image/icon_naver_normal.png);
+}
+.donation-method-option.naver.selected {
+  border-color: #00ca30;
+  background-color: #00ca30;
+  color: white;
+}
+.donation-method-option.naver.selected .donation-method-image {
+  background-image: url(../donate_image/icon_naver_select.png);
+}
+/* 카카오페이 */
+.donation-method-option.kakao .donation-method-image {
+  background-image: url(../donate_image/icon_kakao_normal.png);
+}
+.donation-method-option.kakao.selected {
+  border-color: #fee500;
+  background-color: #fee500;
+  color: black;
+}
+.donation-method-option.kakao.selected .donation-method-image {
+  background-image: url(../donate_image/icon_kakao_select.png);
+}
+
+.donation-confirm{
+  margin-top: 33px;
+  text-align: center;
+}
+.donation-term-link{
+  margin-right: 30px;
+  text-decoration: underline;
+}
+.donation-term-link:last-of-type{
+  margin-right: 0;
+}
+.donation-confirm-button {
+  display: block;
+  width: 100%;
+  max-width: 390px;
+  margin: auto;
+  padding: 20px;
+  border: 0;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+.donation-confirm-button.positive {
+  background-color: #151619;
+  color: white;
+}
+.donation-confirm-button.negative {
+  background-color: #ebebeb;
+  color: #ababac;
+}
+@media screen and (max-width: 768px) {
+  .donation-confirm {
+	text-align: left;
+  }
+  .donation-term-link {
+	display: block;
+	margin-top: 10px;
+  }
+}
+
+
+/* 회원가입 완료 */
+.donation-success-image {
+  max-width: 100px;
+  margin: auto;  
+}
+.donation-success-text {
+  margin-top: 30px;
+  text-align: center;
+}
+.donation-success-text h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.donation-success-text p {
+  margin-top: 15px;
+}
+
+.donation-form-wrapper {
+  max-width: 780px;
+  margin: auto;
+  padding: 30px 0 40px;
+}
+
+.additional-info-box {
+  background-color: #ebebec;
+  padding: 20px;
+  border-radius: 10px;  
+}
+.additional-info-box-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.donation-form-block {
+  width: 100%;
+  margin-top: 20px;
+}
+.donation-form-check {
+  margin-top: 20px;
+}
+.donation-form-block label{
+  display: block;
+  margin-bottom: 10px;
+}
+.donation-form-block input[type="text"],
+.donation-form-block input[type="number"]{
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 5px 0 8px;
+  border: 0;
+  outline: none;
+  border-bottom: 1px solid #c4c4c5;
+}
+.donation-form-block select{
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 5px 0 8px;
+  border: 0;
+  outline: none;
+  border-bottom: 1px solid #c4c4c5;
+  background-image: none;
+}
+.input-group-wrapper {
+  display: flex;
+  gap: 10px;
+}
+.input-group-wrapper button {
+  flex-basis: 50%;
+  background: none;
+  outline: none;
+  border: 1px solid #ababac;
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 12px;
+  cursor: pointer;
+}
+.donation-form-wrapper input:checked[type="radio"] {
+  border-color: #ff733c;
+}
+.donation-form-wrapper input[type="radio"] {
+  float: left;
+  border-radius: 50%;
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 0.4em;
+  vertical-align: middle;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: 0.4em solid rgba(0,0,0,.25);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-print-color-adjust: exact;
+  color-adjust: exact;
+}
+
+.donation-form-wrapper input:checked[type="checkbox"] {
+  background-color: #ff733c;
+}
+.donation-form-wrapper input[type="checkbox"] {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 0.2em;
+  margin-right: 0.4em;
+  vertical-align: middle;
+  border: none;
+  background-color: rgba(0,0,0,0.2);
+  background-image: none;
+  appearance: none;
+}
+.donation-form-wrapper input[type="checkbox"]:after {
+  content: "";
+  display: block;
+  width: 0.4em;
+  height: 0.8em;
+  position: relative;
+  transform:rotate(45deg);
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  top: 0.2em;
+  left: 0.5em;
+}
+
+@media screen and (max-width: 768px) {
+  .donation-form-wrapper {
+	padding-left: 15px;
+	padding-right: 15px;
+  }
+}

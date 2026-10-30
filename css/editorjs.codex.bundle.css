@@ -1908,8 +1908,6 @@ print {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	border: 1px solid #e7e9f5;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
 	overflow: hidden
 }
 
@@ -2482,8 +2480,6 @@ print {
 	color: #6c7580;
 	font-size: 15px;
 	margin-bottom: 30px;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale
 }
 
 @media (max-width:980px) {
@@ -3090,8 +3086,6 @@ print {
 }
 
 .join-page {
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale
 }
 
 .join-page__read-in {
@@ -3694,8 +3688,6 @@ print {
 	margin: 0 auto;
 	padding: 80px 20px 40px;
 	font-weight: 800;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
 	line-height: 1.25em;
 	font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans;
 	font-size: 37px;
@@ -3865,8 +3857,6 @@ print {
 	line-height: 1.62em;
 	word-wrap: break-word;
 	letter-spacing: 0;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
 	color: rgba(0, 0, 0, .85882)
 }
 
@@ -4901,8 +4891,6 @@ print {
 	background: transparent;
 	border: 0;
 	font-weight: 800;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
 	line-height: 1.25em;
 	font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans;
 	font-size: 37px;
@@ -5009,8 +4997,6 @@ print {
 
 .editor-landing {
 	margin-top: -50px;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale
 }
 
 .editor-landing__logo {

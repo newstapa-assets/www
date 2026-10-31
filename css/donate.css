@@ -48,7 +48,7 @@ table {
 }
 
 body {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", "Noto Sans KR", "Segoe UI", Roboto, sans-serif;
 }
 strong, b {
   font-weight: bold;
